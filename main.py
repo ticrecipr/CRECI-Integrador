@@ -1,7 +1,7 @@
-from app.utils.logger import Logger
+from app.services.excel_service import ExcelService
 
-log = Logger()
+excel = ExcelService("SUA_PLANILHA.xlsx")
 
-log.info("CRECI Integrador iniciado.")
+excel.abrir()
 
-print("Sistema iniciado com sucesso!")
+print(excel.listar_abas())
