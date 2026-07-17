@@ -1,6 +1,6 @@
 from app.services.excel_service import ExcelService
 
-excel = ExcelService("SUA_PLANILHA.xlsx")
+excel = ExcelService("data/cancelados.xlsx")
 
 excel.abrir()
 
